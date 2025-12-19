@@ -8,10 +8,9 @@
   <!-- Fonte -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <!-- AOS (animações) -->
+  <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-  <!-- Seu CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -87,11 +86,7 @@
     Que tal transformar tudo isso em mais um momento especial?
   </p>
 
-  <button
-    id="btnConvite"
-    class="btn"
-    data-aos="zoom-in"
-    data-aos-delay="400">
+  <button id="btnConvite" class="btn" data-aos="zoom-in" data-aos-delay="400">
     Aceitar o convite ✨
   </button>
 </section>
@@ -102,11 +97,7 @@
 
   <div class="final-text">
     <h1 data-aos="fade-up">Então se arrume… 💖</h1>
-
-    <p data-aos="fade-up" data-aos-delay="200">
-      <strong>Te espero às 16:00</strong>
-    </p>
-
+    <p data-aos="fade-up" data-aos-delay="200"><strong>Te espero às 16:00</strong></p>
     <span data-aos="fade-up" data-aos-delay="400">
       Algumas histórias não terminam aqui.<br>
       Elas continuam no mundo real.
@@ -119,7 +110,11 @@
 <!-- Scripts -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
-  AOS.init({ duration: 900, once: true });
+  AOS.init({
+    duration: 900,
+    easing: "ease-out-cubic",
+    once: true
+  });
 </script>
 <script src="js/script.js"></script>
 </body>
