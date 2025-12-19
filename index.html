@@ -5,7 +5,12 @@
   <title>Nossa História</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Fonte -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- AOS (ANIMAÇÕES DE TEXTO) -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -22,28 +27,21 @@
   </p>
 </section>
 
-
 <!-- 💫 HISTÓRIA -->
 <section class="story">
   <div class="story-item" data-aos="fade-up">
     <h2>O começo</h2>
-    <p>
-      Quando dois caminhos se cruzaram sem imaginar o quanto isso mudaria tudo.
-    </p>
+    <p>Quando dois caminhos se cruzaram sem imaginar o quanto isso mudaria tudo.</p>
   </div>
 
   <div class="story-item" data-aos="fade-up" data-aos-delay="200">
     <h2>O sentimento</h2>
-    <p>
-      Entre risos, conversas e silêncios, algo verdadeiro nasceu.
-    </p>
+    <p>Entre risos, conversas e silêncios, algo verdadeiro nasceu.</p>
   </div>
 
   <div class="story-item" data-aos="fade-up" data-aos-delay="400">
     <h2>A certeza</h2>
-    <p>
-      Percebi que estar com você é estar em casa.
-    </p>
+    <p>Percebi que estar com você é estar em casa.</p>
   </div>
 </section>
 
@@ -74,6 +72,7 @@
     </div>
   </div>
 </section>
+
 <!-- 💌 CONVITE -->
 <section class="invite">
   <h2 data-aos="fade-up">E agora…</h2>
@@ -82,22 +81,19 @@
     Que tal transformar tudo isso em mais um momento especial?
   </p>
 
-  <button
-    id="btnConvite"
-    class="btn"
-    data-aos="zoom-in"
-    data-aos-delay="400">
+  <button id="btnConvite" class="btn" data-aos="zoom-in" data-aos-delay="400">
     Aceitar o convite ✨
   </button>
 </section>
+
 <!-- 🌌 FINAL -->
 <div id="overlay">
   <canvas id="starfield"></canvas>
 
   <div class="final-text">
-    <h1>Então se arrume… 💖</h1>
-    <p><strong>Te espero às 16:00</strong></p>
-    <span>
+    <h1 data-aos="fade-up">Então se arrume… 💖</h1>
+    <p data-aos="fade-up" data-aos-delay="200"><strong>Te espero às 16:00</strong></p>
+    <span data-aos="fade-up" data-aos-delay="400">
       Algumas histórias não terminam aqui.<br>
       Elas continuam no mundo real.
     </span>
@@ -105,6 +101,16 @@
 </div>
 
 <audio id="musica" src="audio/musica.mp3"></audio>
+
+<!-- AOS SCRIPT -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+    easing: 'ease-out-cubic'
+  });
+</script>
 
 <script src="js/script.js"></script>
 </body>
